@@ -1,0 +1,154 @@
+html, body {
+    font-size: 14px;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.771);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.resizeable {
+    resize: both;
+    overflow: auto;
+}
+
+.resizeable-x {
+    resize: horizontal;
+    overflow: auto;
+}
+
+.scroll-y {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+    height: 101%;
+}
+
+.list-children-button > li > a {
+    cursor: pointer;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.title-main{
+    font-size: 30px;
+    font-weight: 100;
+    text-decoration: underline;
+    background-image: url("/img/a3.png") !important;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    height: 10vh !important;
+}
+
+#ace-editor {
+    width: 100vw;
+    height: 100vh;
+}
+
+.editor-section{
+    height: 100vh;
+}
+
+.bg{
+    background-color: rgb(37, 30, 43);
+}
+
+#tree-viewer{
+    background-color: rgb(78, 70, 84);
+}
+
+.toast-success{
+    background-color: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.toast-error{
+    background-color:  linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+.simpleJson{
+    color: #00b09b;
+    background-color: #000000;
+}
+
+.simpleJson-key{
+    color: rgba(255, 255, 255, 0.807) !important;
+}
+
+.simpleJson-string{
+    color: rgba(193, 103, 24, 0.675) !important;
+}
+
+.simpleJson-bool{
+    color: #0061b0be !important;
+}
+
+.simpleJson-collapsibleMarker{
+    background-color: #00b09b;
+    color: white !important;
+}
+
+.spinner{
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    filter: invert(100%);
+    background-color: #ffffff26;
+    border-radius: 50%;
+}
+
+.spinner-wrapper{
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 9999 !important;
+} 
+
+.tools{
+    height: 100vh;
+}
+
+.side-buttons{
+    width: 5vw !important;
+    left: 0 !important;
+    float: left !important;
+}
+
+.side-buttons>button{
+    width: 5vw !important;
+    float: left !important;
+    left: 0 !important;
+    top: 0 !important;
+    text-align: justify !important;
+    font-size: 0.8vw !important;
+    cursor: pointer !important;
+    padding-left: 1vw !important;
+    /*border: none !important;*/
+}
+.side-cell{
+    height: 15vh !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffffa4;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffffa4;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid #ffffffa4;
+  }

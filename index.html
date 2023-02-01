@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7">Enable Javascript to use this app<![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8">Enable Javascript to use this app<![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9">Enable Javascript to use this app<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js">Enable Javascript to use this app<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Arma 3 CFG Editor/Validator by A3R0</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.6/ace.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://www.jqueryscript.net/demo/json-collapsible-tree/js/simpleJson.js"></script>
+        <link rel="stylesheet" href="https://www.jqueryscript.net/demo/json-collapsible-tree/css/simpleJson.css"> 
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">  
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="spinner-wrapper">
+            <img src="img/spinner.png" class="w3-spin spinner" hidden>
+        </div>   
+        <section id="app-section">
+
+            <div >
+
+                <!-- HEADER 
+                <h3 class="w3-padding-large">Arma 3 Config Editor</h3>
+                -->
+
+                <!-- TOOLS PANEL -->
+                <div class="resizeable-x w3-bar-block w3-third w3-container tools bg a3-tile">
+
+                    <div class="w3-bar-item w3-padding bg title-main"></div>
+
+                    <!--FILES-->
+                    <div class="w3-bar-item w3-padding bg side-cell" id="file-manager">
+                        <span class="title">File Manager</span>
+                        <div class="w3-bar-block">
+                            <div class="w3-bar-item side-buttons">
+                                <button class="w3-blue" id="export">Export</button>
+                            </div>
+                            <div class="w3-bar-item side-buttons"></div>
+                            <div class="w3-bar-item side-buttons">
+                                <button class="w3-blue" id="import">
+                                    Import
+                                </button>
+                                <input id="import-hidden" type="file" accept=".cfg,.cpp,.hpp,.ext" hidden>
+                            </div>                       
+                        </div>
+                    </div>
+
+                    <!--
+                        <div class="w3-bar-item w3-padding bg side-cell" id="dev-manager">
+                            <span class="title">Development Tools</span>
+                            <div class="w3-bar-block">
+                                <div class="w3-bar-item side-buttons">
+                                    <button class="w3-green" id="validate">Validate</button>
+                                </div>
+                                <br>
+                                <div class="w3-bar-item side-buttons">
+                                    <button class="w3-green" disabled>Refactor</button>
+                                </div>                          
+                            </div>
+                        </div>     
+                    -->                   
+                    
+                    <!--CONFIG GUI/VIEWER-->
+                    <div class="w3-bar-item w3-padding bg side-cell" id="gui-manager">
+                        <span class="title">Object Viewer</span>
+                            <div id="tree-viewer"></div>
+                    </div>   
+                    
+                </div>
+                
+                <!-- EDITOR ROW -->
+                <div class="w3-twothird editor-section">
+                    <div id="ace-editor"></div>
+                </div>
+
+            </div>
+
+        </section>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
