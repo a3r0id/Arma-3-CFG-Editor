@@ -2,7 +2,7 @@
 
 *Validate your config files without loading up Arma!*
 
-A simple web app using an embedded ace editor sitting on my pure Javascript CFG parser. I personally use it for managing my server config files and light Cfg's for mods. Does not support preprocessor commands or includes as well as no detection for class inheritance.
+A simple web app using an embedded ace editor sitting on a pure Javascript CFG parser. I personally use it for managing my server config files and light Cfg's for mods. Does not support preprocessor commands or includes as well as no detection for class inheritance.
 
 ## Usage
 Simply clone the repository then navigate to the folder and open `index.html`.
